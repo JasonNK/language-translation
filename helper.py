@@ -53,7 +53,7 @@ def create_lookup_tables(text):
     Create lookup tables for vocabulary
     """
     vocab = set(text.split())
-    vocab_to_int = copy.copy(CODES)
+    vocab_to_int = copy.copy(CODES)  # CODES: a dictionary whose length is 4
 
     for v_i, v in enumerate(vocab, len(CODES)):
         vocab_to_int[v] = v_i
